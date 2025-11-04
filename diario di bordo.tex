@@ -1,0 +1,375 @@
+\documentclass[12pt,a4paper]{article}
+
+
+% Layout + spacing
+\usepackage[a4paper,total={6.2in,8.5in}]{geometry}
+\usepackage{setspace}
+\setstretch{1.2}
+
+% Citations (natbib)
+\usepackage[round,sort&compress]{natbib}
+\setcitestyle{authoryear,open={(},close={)},citesep={,},aysep={,},yysep={,}}
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+
+% Graphics package
+\usepackage{graphicx}
+
+% Float package for table positioning
+\usepackage{float}
+
+% Links (load AFTER apacite)
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=NavyBlue, citecolor=NavyBlue, urlcolor=NavyBlue}
+
+% --- Title control (needs titling) ---
+\usepackage{titling}
+
+% Center the title vertically and horizontally
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+% Center the whole block; make date sit right below the title
+\pretitle{\begin{center}\Large\bfseries}
+\posttitle{\par\end{center}}                        % no extra vertical space here
+\preauthor{\begin{center}\small}  % makes the author smaller
+\postauthor{\end{center}}               % remove author line space
+\predate{\begin{center}\par\vspace{0.25em}\normalsize} % tiny gap before date
+\postdate{\par\end{center}} % close center
+
+\title{DIARIO DI BORDO \\ MARKINDOWN (Prof. \citet{boeri_tito_can_nodate})}
+\author{Jacopo Ghigo}            % keep empty
+\date{\today}        % will appear right under the title
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+
+\section*{Validity of Noncompete clauses}
+
+We want to explore whether there is some interesting correlation between the mismatch betweeen worker and employer incidence values, and the validity of the Noncompete clauses reported. By exploiting an elaboration from OECD on the legislative framework of the countries of our dataset, we seek to create one dummy variable for each country, indicating whether the clause is legal or not(or whether it is ambiguous). The first step is to lie down, if available, relevant criteria that can be cross-checked within out dataset, in order to create such dummies. In the following list we report, for each country, the information that we have on the legal framework, and we proposed the parameters that we can use to create the dummies.
+
+\subsubsection*{Belgium}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & Article 65, \S 1, and Article 86, \S 1, Employment Contracts Act. Maximum duration 12 months. \\
+\hline
+2. Role of collective agreements & The Belgian Employment Contracts Act expressly refers collective bargaining agreements to regulate non-compete clauses under some circumstances (e.g., if the salary is between Euro 43,106 and 86,212, a non-compete is valid only for those occupations whose collective agreement, signed at joint committee level, regulates the use of non-compete clauses). However, only a few joint committees have stipulated a collective agreement regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & The covenant must cover similar activities (in terms of the type of business, as well as based on the employee's occupation and tasks performed). By exploiting special knowledge, peculiar to, and acquired in that enterprise, there must be a possibility that the enterprise is harmed. \\
+\hline
+4. Compensation & Minimum compensation 50\% of gross salary. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds). \\
+\hline
+7. Modification or blue pencil & Blue pencil or modification not allowed. \\
+\hline
+8. Enforceability in case of dismissal & Article 65, \S 2 of the Employment Contracts Act provides that a non-compete is unenforceable if the contract is terminated either during the first six months from the commencement of the employment contract, after such period, by the employer without urgent cause on the part of the employee, or by the employee due to urgent cause on the part of the employer. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{France}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceability. \\
+\hline
+2. Role of collective agreements & Evidence suggests that collective agreements play a role in regulating non-compete clauses in France, both at the firm and sectoral level. \\
+\hline
+3. Employer's protectable interest & A non-compete must be essential to protect the employer's legitimate interests. Moreover, the employer must be able to demonstrate the likelihood of actual harm if the employee engages in competitive activity. \\
+\hline
+4. Compensation & Specific compensation is required. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete clauses must be reasonable, within certain boundaries set by the regulatory framework. \\
+\hline
+7. Modification or blue pencil & When faced with a non-compete clause included in an employment contract, the judge may limit its application by restricting its effect in terms of time, geographical scope, or other conditions when the clause prevents the employee from pursuing an activity in line with their skills and experience. \\
+\hline
+8. Enforceability in case of dismissal & The enforceability of a non-compete is not linked to the reason for the termination of the employment relationship. \\
+\hline
+9. Sanctions & The sanction for the illegality of a - is its nullity, and where applicable, compensation for the employee who has suffered harm. \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsubsection*{Germany}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & German Commercial Code (HGB), especially \S\S 74 ff. HGB. Maximum duration 2 years. \\
+\hline
+2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & The covenant must be reasonable in scope and protect legitimate business interests \\
+\hline
+4. Compensation & Minimum compensation 50\% of the contractual benefits last received by the employee (\S 74 II HGB) \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds) \\
+\hline
+7. Modification or blue pencil & Courts cannot reduce the scope of the non-compete unless the employee agrees to it. \\
+\hline
+8. Enforceability in case of dismissal & According to Article 75 of the Commercial Code, in case of dismissal without prior notice, the non-compete is unenforceable if the party who terminates the contract declares within one month upon termination that they want to be released. If the employee terminates the contract, she remains bound by the non-competition clause subject to a mutually agreed termination. If the employer terminates the employment contract, the employee may be released from the non-competition clause, provided that the termination was not due to a significant personal reason, or the employer agrees to pay compensation in the amount of the full contractual remuneration for the duration of the non-competition clause. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses. \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsubsection*{Japan}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceable non-compete clauses. No case basis. \\
+\hline
+2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & Legitimate business interests. \\
+\hline
+4. Compensation & Specific compensation is required. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & Employers can change unilaterally some rules of employment when reasonable, and under specific circumstances; otherwise the general rule is that employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds). \\
+\hline
+7. Modification or blue pencil & Blue pencil or modification not allowed. \\
+\hline
+8. Enforceability in case of dismissal & Enforceable if employer terminates. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\subsubsection*{Korea}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceable non-compete clauses. \\
+\hline
+2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & Employers can protect their interests in valuable information. \\
+\hline
+4. Compensation & No compensation required. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete clauses must be reasonable. \\
+\hline
+7. Modification or blue pencil & Blue pencil allowed. \\
+\hline
+8. Enforceability in case of dismissal & No indication of a connection between reasons for dismissals and enforceability of non-compete clauses. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection*{Mexico}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & No statute regulates the use of non-compete clauses in Mexico. Non-compete clauses are unenforceable because they limit individual's constitutional rights to work. \\
+\hline
+2. Role of collective agreements & No indication of collective agreements playing a role in regulating non-compete clauses \\
+\hline
+3. Employer's protectable interest & - \\
+\hline
+4. Compensation & - \\
+\hline
+5. Change in terms/continued employment sufficient consideration & - \\
+\hline
+6. Plaintiff burden of proof & - \\
+\hline
+7. Modification or blue pencil & - \\
+\hline
+8. Enforceability in case of dismissal & - \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection*{New Zealand}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of their enforceability. \\
+\hline
+2. Role of collective agreements & There is no evidence on collective agreements playing any role. \\
+\hline
+3. Employer's protectable interest & Non-compete clauses must not extend beyond what is required to protect a proprietary interest. \\
+\hline
+4. Compensation & No compensation is required. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & Employers and employees enter into a non-compete agreement or agree to a non-compete clause being included or amended in an existing employment agreement at the start of, during, or at the end of an employee's employment. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable. \\
+\hline
+7. Modification or blue pencil & Blue pencil or modification allowed. \\
+\hline
+8. Enforceability in case of dismissal & The general approach taken by the courts is that the circumstances surrounding the termination of an employment agreement doesn't render the non-compete unenforceable. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses. \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Poland}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & Polish Labour Code, Article 101 and following. Maximum duration is not explicit but assessed on a reasonableness basis. \\
+\hline
+2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & The employee shall have access to confidential information whose circulation might cause damage to the (former) employer. \\
+\hline
+4. Compensation & Minimum compensation 25\% of gross salary. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds) \\
+\hline
+7. Modification or blue pencil & While not formally recognized by the law, courts reportedly read down non-compete clauses to make them enforceable in exceptional cases. \\
+\hline
+8. Enforceability in case of dismissal & There is no connection between the enforceability of non-compete clauses and the reasons for the termination of the employment relationship. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsubsection*{Portugal}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & Article 136 of the Portuguese Labour Code regulates the use of non-compete clauses. Maximum duration is 24 months. \\
+\hline
+2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
+\hline
+3. Employer's protectable interest & The employer must suffer damages caused by the new activity pursued by the former employee. \\
+\hline
+4. Compensation & Minimum compensation required but based on reasonableness. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework. \\
+\hline
+7. Modification or blue pencil & Except from potentially reducing the amount of penalty clause, courts cannot reduce the scope to enforce non-compete clauses. \\
+\hline
+8. Enforceability in case of dismissal & In the event of dismissal declared unlawful or termination with just cause by the employee due to an unlawful act by the employer, the compensation for the non-compete shall be increased to the amount equivalent to the base salary at the date of termination of the contract, under penalty of not being able to invoke the limitation of activity provided for in the restriction. \\
+\hline
+9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Spain}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
+\hline
+\textbf{Dimension/Question} & \textbf{Short answer} \\
+\hline
+1. Statute of general applicability & The Workers' Statute Article 21, par. 2., regulates non-compete clauses. Maximum duration is 2 years for technical employees and 6 months for other workers. \\
+\hline
+2. Role of collective agreements & An examination of 73 collective agreements published in 2004 found no reference to non-compete clauses. A more recent search in the REGCON database by entering the keyword 'non-compete agreement' has resulted in several collective agreements containing these clauses. \\
+\hline
+3. Employer's protectable interest & Employer must have a legitimate industrial or commercial interest. \\
+\hline
+4. Compensation & Minimum adequate compensation is required. \\
+\hline
+5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
+\hline
+6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework \\
+\hline
+7. Modification or blue pencil & If the time limit is set in violation of the law, courts can reduce the duration to comply with the 2 years or 6 months limit. It is also possible to proportionally reduce the amount of compensation to adjust it to the shorter temporal scope of the prohibition. \\
+\hline
+8. Enforceability in case of dismissal & The non-compete agreement is enforceable even when the employer terminates the employment contract, unless the dismissal is intended to break the non-compete agreement. \\
+\hline
+9. Sanctions & If an employer attempts to enforce an overly broad non-compete that is later deemed unenforceable, the conduct will fall under the infraction type outlined in Article 7.10 of the consolidated text of the Law on Infractions and Sanctions in the Social Order. This infraction is punishable by a fine ranging from €751 to €7,500. \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{biblio}
+
+\end{document}
