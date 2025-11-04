@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.25)  4 NOV 2025 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.25)  4 NOV 2025 12:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+(C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
 \c@section=\count276
@@ -427,12 +427,12 @@ LaTeX Font Info:    ... okay on input line 52.
 * \topmargin=-16.96927pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=50.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -487,12 +487,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1803) in paragraph at lines 89--90
-[]\OT1/cmr/m/n/10.95 Preliminary ev-i-dence in-di-cates that some col-lec-tive
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 83--106
+ [][] 
  []
 
 
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 83--106
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 118--141
  [][] 
  []
 
@@ -502,14 +502,14 @@ Overfull \hbox (1.60178pt too wide) in paragraph at lines 83--106
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 
+l.142 
        [1]
-Underfull \hbox (badness 2884) in paragraph at lines 119--120
-[]\OT1/cmr/m/n/10.95 The Bel-gian Em-ploy-ment Con-tracts Act ex-pressly
+Underfull \hbox (badness 1077) in paragraph at lines 171--172
+[]\OT1/cmr/m/n/10 Non-compete clauses must be rea-son-able, within cer-tain
  []
 
 
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 113--136
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 157--180
  [][] 
  []
 
@@ -519,9 +519,9 @@ Overfull \hbox (1.60178pt too wide) in paragraph at lines 113--136
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 
+l.181 
        [2]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 143--166
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 188--211
  [][] 
  []
 
@@ -531,87 +531,76 @@ Overfull \hbox (1.60178pt too wide) in paragraph at lines 143--166
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 
+l.212 
        [3]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 174--197
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 219--242
  [][] 
  []
 
 
 
 [4]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 205--228
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 250--273
+ [][] 
+ []
+
+
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 282--305
  [][] 
  []
 
 
 
 [5]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 236--259
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 314--337
+ [][] 
+ []
+
+
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 344--367
  [][] 
  []
 
 
 
 [6]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 268--291
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 376--399
  [][] 
  []
 
 
 
 [7]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 300--323
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 406--429
  [][] 
  []
 
 
 
 [8]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 330--353
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 436--459
  [][] 
  []
 
 
 
 [9]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 362--385
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 467--490
  [][] 
  []
 
 
 
 [10]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 392--415
+Overfull \hbox (1.60178pt too wide) in paragraph at lines 497--520
  [][] 
  []
 
 
 
 [11]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 422--445
- [][] 
- []
 
-
-
-[12]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 453--476
- [][] 
- []
-
-
-
-[13]
-Overfull \hbox (1.60178pt too wide) in paragraph at lines 483--506
- [][] 
- []
-
-
-
-[14]
-
-[15] (diario di bordo.aux)
+[12] (diario di bordo.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -620,17 +609,17 @@ Package rerunfilecheck Info: File `"diario di bordo".out' has not changed.
 (rerunfilecheck)             Checksum: 6A3098D17670617E0075CE0343C22F34;356.
  ) 
 Here is how much of TeX's memory you used:
- 11848 strings out of 468130
- 187831 string characters out of 5430633
- 627087 words of memory out of 5000000
- 40262 multiletter control sequences out of 15000+600000
- 633333 words of font info for 64 fonts, out of 8000000 for 9000
+ 11859 strings out of 468130
+ 187994 string characters out of 5430633
+ 630087 words of memory out of 5000000
+ 40274 multiletter control sequences out of 15000+600000
+ 635069 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,10n,79p,865b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jacop\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "diario di bordo.pdf" (18 pages, 113979 bytes).
+ <C:\Users\jacop\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jacop\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "diario di bordo.pdf" (15 pages, 105151 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
+ 129 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

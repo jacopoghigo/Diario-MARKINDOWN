@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[11pt,a4paper]{article}
 
 
 % Layout + spacing
@@ -105,6 +105,11 @@ We want to explore whether there is some interesting correlation between the mis
 \end{tabular}
 \end{table}
 
+
+I don't have enough information to create a dummy identifying legal NCCs in Canada.
+
+
+
 \subsubsection*{Belgium}
 
 \begin{table}[H]
@@ -135,6 +140,15 @@ We want to explore whether there is some interesting correlation between the mis
 \end{tabular}
 \end{table}
 
+Based on this information, I could create a dummy for Belgium == 1 if:
+\begin{itemize}
+    \item Duration $\leq$ 12 months
+    \item Compensation present
+    \item The NCC is limited to the a competing firm, taking into account sector and location
+    \item The NCC is written
+
+\end{itemize}
+
 \subsubsection*{France}
 
 \begin{table}[H]
@@ -164,6 +178,8 @@ We want to explore whether there is some interesting correlation between the mis
 \hline
 \end{tabular}
 \end{table}
+
+
 
 
 \subsubsection*{Germany}
