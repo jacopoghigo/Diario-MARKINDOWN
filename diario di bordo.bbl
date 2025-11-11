@@ -5,11 +5,10 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Boeri()]{boeri_tito_can_nodate}
-Tito Boeri.
-\newblock Can {Employers}' {Market} {Power} {Harm} {Workers}' {Health}?
-  {\textbar} {Bocconi} {University}.
-\newblock URL
-  \url{https://www.unibocconi.it/en/news/can-employers-market-power-harm-workers-health}.
+\bibitem[Starr et~al.(2020)Starr, Prescott, and Bishara]{starr_behavioral_2020}
+Evan Starr, J.~J. Prescott, and Norman Bishara.
+\newblock The {Behavioral} {Effects} of ({Unenforceable}) {Contracts},
+  September 2020.
+\newblock URL \url{https://papers.ssrn.com/abstract=2858637}.
 
 \end{thebibliography}

@@ -1,6 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1762447062.55816 "c:/Users/jacop/Dropbox/ERC-MONOPSONIES/overleaf/diario-di-bordo---MARKINDOWN/diario di bordo.tex" "diario di bordo.pdf" "diario di bordo" 1762447065.25397 0
-  "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762263802 81247 50d52f6487769ef97fe2dc7d59ae1563 ""
+["bibtex diario di bordo"] 1762860193.61627 "diario di bordo.aux" "diario di bordo.bbl" "diario di bordo" 1762860196.20995 0
+  "./OECD_ERC_Survey.bib" 1762859662 7551 dfcf1ec491a90121751113552cc4f439 ""
+  "C:/Users/jacop/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
+  "diario di bordo.aux" 1762860195 1089 2266da6bb4eb43dfc49103016b6feb70 "pdflatex"
+  (generated)
+  "diario di bordo.bbl"
+  "diario di bordo.blg"
+  (rewritten before read)
+["pdflatex"] 1762860193.98891 "c:/Users/jacop/Dropbox/ERC-MONOPSONIES/overleaf/diario-di-bordo---MARKINDOWN/diario di bordo.tex" "diario di bordo.pdf" "diario di bordo" 1762860196.21086 0
+  "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762860035 82845 61cd0b62b4b3ff8abe9a94ac0f89d652 ""
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1762255462 11548 012cc75c5fde91943728117b8019b071 ""
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1762250722 12668 0d293007c707e241d4fe2654d57717ab ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758806476 13286966 9b1e14b04ff872186c0241c4c8382aff ""
@@ -27,10 +35,12 @@
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmtt10.tfm" 1136765053 768 1321e9409b4137d6fb428ac9dc956269 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1247596667 31099 342ef5a582aacbd3346f3cf4579679fa ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty" 1576433602 40635 c40361e206be584d448876bba8a64a3b ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty" 1575926576 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -87,6 +97,7 @@
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse.sty" 1724854269 9783 ab4bee47700c04aadedb8da27591b0ab ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/mdframed/md-frame-0.mdf" 1372708085 24831 326d9f019009ed0c076106fa6cb860fb ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/mdframed/mdframed.sty" 1372708085 53487 3e997243f47cb3ba8b4c7b8df9c82989 ""
+  "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/natbib/natbib.sty" 1292249081 46712 1c8843383c0bd05870c45fa0ebea6cc2 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/needspace/needspace.sty" 1742730683 1297 95e05b694b6d7375c39c5145fe24b731 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
@@ -97,11 +108,12 @@
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1750428951 2269 2de6c7a5fd634dfef00a960544463a38 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
   "Images/ncc_by_worker_type.png" 1761775420 153978 914a62f8193318e036e88842921dbfb4 ""
-  "c:/Users/jacop/Dropbox/ERC-MONOPSONIES/overleaf/diario-di-bordo---MARKINDOWN/diario di bordo.tex" 1762447053 30183 c9a9077384bc7d5ed9bb540dc6d8d0a7 ""
-  "diario di bordo.aux" 1762447064 931 67885fabc6db39f3eddde60e54d4e7cf "pdflatex"
-  "diario di bordo.out" 1762447064 663 461cc9a2fc827a254ca9b8d908357f7c "pdflatex"
-  "diario di bordo.tex" 1762447053 30183 c9a9077384bc7d5ed9bb540dc6d8d0a7 ""
-  "diario di bordo.toc" 1762447064 334 bd0fbba178c981a7ce9b68230f3bdb04 "pdflatex"
+  "c:/Users/jacop/Dropbox/ERC-MONOPSONIES/overleaf/diario-di-bordo---MARKINDOWN/diario di bordo.tex" 1762860191 30980 349eb4461cd3bd0611e6e86d70719d7a ""
+  "diario di bordo.aux" 1762860195 1089 2266da6bb4eb43dfc49103016b6feb70 "pdflatex"
+  "diario di bordo.bbl" 1762860193 569 3f916171e66a3b0143e271906f6800bd "bibtex diario di bordo"
+  "diario di bordo.out" 1762860195 653 9703df0c20f1e790479ae85f1735ea8b "pdflatex"
+  "diario di bordo.tex" 1762860191 30980 349eb4461cd3bd0611e6e86d70719d7a ""
+  "diario di bordo.toc" 1762860195 322 9db51ccfd6e265a7576b692dc06a3d9b "pdflatex"
   (generated)
   "diario di bordo.aux"
   "diario di bordo.log"
