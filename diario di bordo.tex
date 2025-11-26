@@ -58,7 +58,7 @@
 \thispagestyle{empty}
 
 \newpage
-\thispagestyle{empty}
+
 
 
 
@@ -106,764 +106,128 @@ just to deter workers from moving and not to protect business interests, go hand
 wages compared to likely enforceable ones. On the opposite, they are not associated to higher or lower
 training opportunities.
 
-\subsubsection*{Canada}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & No federal statute regulates the use of non-compete clauses in Canada (two out of the ten Canadian provinces regulate the use of non-compete clauses by law). \\
-\hline
-2. Role of collective agreements & Preliminary evidence indicates that some collective agreements may play a role in regulating the use of non-compete clauses at the firm level. \\
-\hline
-3. Employer's protectable interest & A non-compete clause is void and unenforceable, unless the employer has a "real proprietary interest" (such as trade secrets, confidential information, and customer lists). \\
-\hline
-4. Compensation & Compensation is not formally required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & There must be a new "fresh mutual consideration". \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable \\
-\hline
-7. Modification or blue pencil & Courts generally do not amend or modify an ambiguous or overly broad non-compete; however, courts have sometimes accepted that "blue-pencil" severance may be applied in limited circumstances. \\
-\hline
-8. Enforceability in case of dismissal & Courts have ruled that when an employer commits a regulatory breach of an employment contract (e.g. a wrongful dismissal), the employee will be released from the obligations of a non-compete clause. \\
-\hline
-9. Sanctions & (Except for Ontario) there are no explicit penalties, fines or other sanctions for employers using overly broad or unenforceable agreements. \\
-\hline
-\end{tabular}
-\end{table}
-
-
-I don't have enough information to create a dummy identifying legal NCCs in Canada.
-
-
-
-\subsubsection*{Belgium}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Article 65, \S 1, and Article 86, \S 1, Employment Contracts Act. Maximum duration 12 months. \\
-\hline
-2. Role of collective agreements & The Belgian Employment Contracts Act expressly refers collective bargaining agreements to regulate non-compete clauses under some circumstances (e.g., if the salary is between Euro 43,106 and 86,212, a non-compete is valid only for those occupations whose collective agreement, signed at joint committee level, regulates the use of non-compete clauses). However, only a few joint committees have stipulated a collective agreement regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & The covenant must cover similar activities (in terms of the type of business, as well as based on the employee's occupation and tasks performed). By exploiting special knowledge, peculiar to, and acquired in that enterprise, there must be a possibility that the enterprise is harmed. \\
-\hline
-4. Compensation & Minimum compensation 50\% of gross salary. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds). \\
-\hline
-7. Modification or blue pencil & Blue pencil or modification not allowed. \\
-\hline
-8. Enforceability in case of dismissal & Article 65, \S 2 of the Employment Contracts Act provides that a non-compete is unenforceable if the contract is terminated either during the first six months from the commencement of the employment contract, after such period, by the employer without urgent cause on the part of the employee, or by the employee due to urgent cause on the part of the employer. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-\cite{hendrickx_non-compete_2022} established that noncompete shall be deemed non-existent when the annual salary does not exceed 36,201 Euro. If the salary is included between 36,201 and 72,402, the clause is valid only if the post is determined by a collective bargaining agreement. 
-The clause must be included in a written document. 
-It must relate to similar activities: it cannot contain only wordings such as: ``prohibition on entering the service of a competitor''. 
-The NCA must be geographically limtied to the places where the employee can actually compete with the employer, given the nature of the business and its radius. It must NOT extend beyond national territory. 
-The NCA cannot last longer than 12 months. 
-The NCA must contain a compensation to the employee. The minimum amount of this indemntity is equal to half of the worker's gross salary corresponding to the period of application of the noncompete clause. 
-Finally, \cite{hendrickx_non-compete_2022} specifies that for some white collar workers, it is possible to deviate form the above mentioned conditions. The two following conditions must hold:
-\begin{itemize}
-    \item The company must have an international field of activity or significant economic, technical or financial interests in international amrkets; or
-    \item It must have its own research department. 
-\end{itemize}
-
-Basically, if such employees can acquire specific knowledge or skills, the NCA can restrain the worker from being employed also outside the national territory, and for longer than 12 months. 
-
-Based on this information, I could create a dummy for Belgium == 1 if:
-\begin{itemize}
-    \item Duration $\leq$ 12 months
-    \item Compensation present
-    \item The NCC is limited to the a competing firm, taking into account sector and location
-    \item The NCC is written
-
-\end{itemize}
-
-\subsubsection*{France}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceability. \\
-\hline
-2. Role of collective agreements & Evidence suggests that collective agreements play a role in regulating non-compete clauses in France, both at the firm and sectoral level. \\
-\hline
-3. Employer's protectable interest & A non-compete must be essential to protect the employer's legitimate interests. Moreover, the employer must be able to demonstrate the likelihood of actual harm if the employee engages in competitive activity. \\
-\hline
-4. Compensation & Specific compensation is required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete clauses must be reasonable, within certain boundaries set by the regulatory framework. \\
-\hline
-7. Modification or blue pencil & When faced with a non-compete clause included in an employment contract, the judge may limit its application by restricting its effect in terms of time, geographical scope, or other conditions when the clause prevents the employee from pursuing an activity in line with their skills and experience. \\
-\hline
-8. Enforceability in case of dismissal & The enforceability of a non-compete is not linked to the reason for the termination of the employment relationship. \\
-\hline
-9. Sanctions & The sanction for the illegality of a - is its nullity, and where applicable, compensation for the employee who has suffered harm. \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-
-
-Based on this information, I could create a dummy for France == 1 if:
-\begin{itemize}
-    
-    \item Compensation present
-    
-\end{itemize}
-
-
-
-\subsubsection*{Germany}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & German Commercial Code (HGB), especially \S\S 74 ff. HGB. Maximum duration 2 years. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & The covenant must be reasonable in scope and protect legitimate business interests \\
-\hline
-4. Compensation & Minimum compensation 50\% of the contractual benefits last received by the employee (\S 74 II HGB) \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds) \\
-\hline
-7. Modification or blue pencil & Courts cannot reduce the scope of the non-compete unless the employee agrees to it. \\
-\hline
-8. Enforceability in case of dismissal & According to Article 75 of the Commercial Code, in case of dismissal without prior notice, the non-compete is unenforceable if the party who terminates the contract declares within one month upon termination that they want to be released. If the employee terminates the contract, she remains bound by the non-competition clause subject to a mutually agreed termination. If the employer terminates the employment contract, the employee may be released from the non-competition clause, provided that the termination was not due to a significant personal reason, or the employer agrees to pay compensation in the amount of the full contractual remuneration for the duration of the non-competition clause. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses. \\
-\hline
-\end{tabular}
-\end{table}
-
-According to \cite{magotsch_chapter_2018} (further evidence can be found here \cite{maron_10_2022}), the law in relation to noncompetition clauses is regulated by the Commercial Code, which sets out detailed requirements for the validity of NCAs.
-NCAs must be in written form and signed by both parties. The clause must make provision for a compensation payment in relation to the whole length of a noncompete, regardless of the extent of its application to the branch or business of the employer. Interestingly,  If the compensation payment as stipulated in the contract does not meet the minimum statutory requirements, the
-employee has a choice whether or not to comply with the non-competition clause. When the employee chooses not to comply, the clause is not enforceable by the
-employer. In case the employee decides to comply, the employer must pay the
-compensation payment as stipulated. 
-the employee should receive a monthly payment of at least half of his former gross earnings. 
-A non-competition clause can only have effect to protect the legitimate interests of
-the employer. The courts have developed the following criteria from this
-requirement:
-
-\begin{itemize}
-    \item Sector and geographical area: Case law has shown that a non-competition clause
-that is extended beyond the sector of the employer is too broad, as is a worldwide
-clause. In such cases the courts will adjust the clause. The adjusted clause will
-still be enforceable and the employer will therefore still have to pay the compensation payment
-\item Length of non-competition clause: Non-competition clauses can only be binding
-for a period of up to 2 years. If a longer period has been agreed between the
-parties, after 2 years the employee will have the choice of continuing to comply
-with the non-competition clause and receiving a compensation payment, or
-ceasing to comply and entering into competition.
-\end{itemize}
-
-
-
-Based on this information, I could create a dummy for Germany == 1 if:
-\begin{itemize}
-    \item Duration $\leq$ 24 months
-    \item Compensation present
-    \item The NCC must be \textcolor{red}{reasonable, within certain boundaries set by the regulatory framework (including wage thresholds)???}
-    \item The NCC is written
-
-\end{itemize}
-
-\subsubsection*{Japan}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceable non-compete clauses. No case basis. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & Legitimate business interests. \\
-\hline
-4. Compensation & Specific compensation is required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & Employers can change unilaterally some rules of employment when reasonable, and under specific circumstances; otherwise the general rule is that employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds). \\
-\hline
-7. Modification or blue pencil & Blue pencil or modification not allowed. \\
-\hline
-8. Enforceability in case of dismissal & Enforceable if employer terminates. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-\cite{ueda_restrictions_2018} posits that courts seem to understand that a standard reasonable term of restrictive covenants is two years or shorter. 
-In Japan, courts have enforced covenants with no geographical limitation at all, as long as other elements remained within a reasonable range. 
-As a general rule, Japanese contract law does not require contracting parties to supply any consideration to enforce their promise, and courts seem to regard compensatory measures element as a flexible notion.  
-
-Based on this information, I could create a dummy for Japan == 1 if:
-\begin{itemize}
-    
-    \item Compensation present
-
-\end{itemize}
-
-\subsubsection*{Korea}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of enforceable non-compete clauses. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & Employers can protect their interests in valuable information. \\
-\hline
-4. Compensation & No compensation required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete clauses must be reasonable. \\
-\hline
-7. Modification or blue pencil & Blue pencil allowed. \\
-\hline
-8. Enforceability in case of dismissal & No indication of a connection between reasons for dismissals and enforceability of non-compete clauses. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\subsubsection*{Mexico}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & No statute regulates the use of non-compete clauses in Mexico. Non-compete clauses are unenforceable because they limit individual's constitutional rights to work. \\
-\hline
-2. Role of collective agreements & No indication of collective agreements playing a role in regulating non-compete clauses \\
-\hline
-3. Employer's protectable interest & - \\
-\hline
-4. Compensation & - \\
-\hline
-5. Change in terms/continued employment sufficient consideration & - \\
-\hline
-6. Plaintiff burden of proof & - \\
-\hline
-7. Modification or blue pencil & - \\
-\hline
-8. Enforceability in case of dismissal & - \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\subsubsection*{New Zealand}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & In the absence of a statute regulating non-compete clauses, courts have played a significant role in defining the boundaries of their enforceability. \\
-\hline
-2. Role of collective agreements & There is no evidence on collective agreements playing any role. \\
-\hline
-3. Employer's protectable interest & Non-compete clauses must not extend beyond what is required to protect a proprietary interest. \\
-\hline
-4. Compensation & No compensation is required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & Employers and employees enter into a non-compete agreement or agree to a non-compete clause being included or amended in an existing employment agreement at the start of, during, or at the end of an employee's employment. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable. \\
-\hline
-7. Modification or blue pencil & Blue pencil or modification allowed. \\
-\hline
-8. Enforceability in case of dismissal & The general approach taken by the courts is that the circumstances surrounding the termination of an employment agreement doesn't render the non-compete unenforceable. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses. \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsubsection*{Poland}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Polish Labour Code, Article 101 and following. Maximum duration is not explicit but assessed on a reasonableness basis. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & The employee shall have access to confidential information whose circulation might cause damage to the (former) employer. \\
-\hline
-4. Compensation & Minimum compensation 25\% of gross salary. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds) \\
-\hline
-7. Modification or blue pencil & While not formally recognized by the law, courts reportedly read down non-compete clauses to make them enforceable in exceptional cases. \\
-\hline
-8. Enforceability in case of dismissal & There is no connection between the enforceability of non-compete clauses and the reasons for the termination of the employment relationship. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on this information, I could create a dummy for Poland == 1 if:
-\begin{itemize}
-    
-    \item Compensation present
-
-\end{itemize}
-
-\subsubsection*{Portugal}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Article 136 of the Portuguese Labour Code regulates the use of non-compete clauses. Maximum duration is 24 months. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & The employer must suffer damages caused by the new activity pursued by the former employee. \\
-\hline
-4. Compensation & Minimum compensation required but based on reasonableness. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework. \\
-\hline
-7. Modification or blue pencil & Except from potentially reducing the amount of penalty clause, courts cannot reduce the scope to enforce non-compete clauses. \\
-\hline
-8. Enforceability in case of dismissal & In the event of dismissal declared unlawful or termination with just cause by the employee due to an unlawful act by the employer, the compensation for the non-compete shall be increased to the amount equivalent to the base salary at the date of termination of the contract, under penalty of not being able to invoke the limitation of activity provided for in the restriction. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on this information, I could create a dummy for Portugal == 1 if:
-\begin{itemize}
-    
-    \item Maximum duration: 24 months
-    \item Compensation present
-
-\end{itemize}
-
-\subsubsection*{Spain}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & The Workers' Statute Article 21, par. 2., regulates non-compete clauses. Maximum duration is 2 years for technical employees and 6 months for other workers. \\
-\hline
-2. Role of collective agreements & An examination of 73 collective agreements published in 2004 found no reference to non-compete clauses. A more recent search in the REGCON database by entering the keyword 'non-compete agreement' has resulted in several collective agreements containing these clauses. \\
-\hline
-3. Employer's protectable interest & Employer must have a legitimate industrial or commercial interest. \\
-\hline
-4. Compensation & Minimum adequate compensation is required. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework \\
-\hline
-7. Modification or blue pencil & If the time limit is set in violation of the law, courts can reduce the duration to comply with the 2 years or 6 months limit. It is also possible to proportionally reduce the amount of compensation to adjust it to the shorter temporal scope of the prohibition. \\
-\hline
-8. Enforceability in case of dismissal & The non-compete agreement is enforceable even when the employer terminates the employment contract, unless the dismissal is intended to break the non-compete agreement. \\
-\hline
-9. Sanctions & If an employer attempts to enforce an overly broad non-compete that is later deemed unenforceable, the conduct will fall under the infraction type outlined in Article 7.10 of the consolidated text of the Law on Infractions and Sanctions in the Social Order. This infraction is punishable by a fine ranging from €751 to €7,500. \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on this information, I could create a dummy for Spain == 1 if:
-\begin{itemize}
-
-    \item Maximum duration: 24 months for technical employees, 6 months for other workers
-    \item Compensation present
-
-\end{itemize}
-
-\subsubsection*{Sweden}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Swedish Contracts Act (sections 36 and 38). Maximum duration 9/18 months (longer under special circumstances). \\
-\hline
-2. Role of collective agreements & Within the general framework defined by the Contracts Act, the 2015 collective bargaining agreements plays a pivotal role in regulating the use of non-compete clauses. \\
-\hline
-3. Employer's protectable interest & Agreement that prevent competition (meaning either to prohibit the engagement in a type of business or to not take up employment) shall not be more extensive than may be considered reasonable having regard to the need to access to trade secrets that can be used as a mean of competition. \\
-\hline
-4. Compensation & Employer must pay up to 60\% of the employee's previous salary, or a lower amount if the employee earns a salary from non-competing work. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework (including wage thresholds). \\
-\hline
-7. Modification or blue pencil & Courts may adjust or disregard a non-compete agreement if it is not considered reasonable. \\
-\hline
-8. Enforceability in case of dismissal & Courts have held that noncompetes are enforceable only when an employer wants to retain the employee in their company, thus making them unenforceable if, for example, the employee is dismissed due to redundancy. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on this information, I could create a dummy for Sweden == 1 if:
-\begin{itemize}
-    
-    \item Maximum duration: 18 months
-    \item Compensation present
-
-\end{itemize}
-
-\subsubsection*{Switzerland}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Code of Obligations (Article 340 and following) regulates non-compete clauses. Maximum duration is 3 years. \\
-\hline
-2. Role of collective agreements & A preliminary analysis of some collective agreements indicates that they contain rules on the prohibition of competition; however, they refer in general to the rules of the Code of Obligations. \\
-\hline
-3. Employer's protectable interest & An employee can sign a written agreement whereby they refrain from competing as long as the employment relationship allows the employee to gain knowledge about employer's clients, methods of production and trade secrets and such knowledge might cause the employer substantial harm. \\
-\hline
-4. Compensation & Courts apply a reasonableness test. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & No specified circumstances, but employees need to agree to sign the agreement \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable, within certain boundaries set by the regulatory framework \\
-\hline
-7. Modification or blue pencil & Following Article 340a of the Code of Obligations, courts tend to limit the scope of the restriction when the agreement is overbroad. \\
-\hline
-8. Enforceability in case of dismissal & At termination, employers can unilaterally release employees; however, when obligations are bilateral (e.g., the employee is entitled to receive a compensation) the parties must agree to the release, unless the written agreement provide otherwise. Moreover, Article 340c provides that the restriction on competition is extinguished once the employer demonstrably no longer has a substantial interest in its continuation", as well as when the employer terminates the employment relationship without good cause or if the employee terminates the employment relationship with good cause. \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on this information, I could create a dummy for Switzerland == 1 if:
-\begin{itemize}
-    
-    \item Maximum duration: 36 months
-    
-
-\end{itemize}
-
-\subsubsection*{United Kingdom}
-
-\begin{table}[H]
-\centering
-\small
-\begin{tabular}{|p{0.35\textwidth}|p{0.6\textwidth}|}
-\hline
-\textbf{Dimension/Question} & \textbf{Short answer} \\
-\hline
-1. Statute of general applicability & Common law courts have assessed the reasonableness of non-compete clauses agreements. \\
-\hline
-2. Role of collective agreements & There is no indication of collective agreements playing a role in regulating non-compete clauses. \\
-\hline
-3. Employer's protectable interest & The covenant must protect legitimate employers' interests such as a customer base and trade secrets. \\
-\hline
-4. Compensation & For a new employee, the offer of employment (plus salary and benefits) is deemed sufficient consideration for entering a non-compete. \\
-\hline
-5. Change in terms/continued employment sufficient consideration & For existing employees, non-compete clauses require additional consideration, such as a pay rise or new benefits, and continued employment is not sufficient. \\
-\hline
-6. Plaintiff burden of proof & Non-compete must be reasonable \\
-\hline
-7. Modification or blue pencil & Courts render non-compete clauses void when they are unreasonable and do not rewrite the covenant to render it enforceable. However, courts apply the blue pencil test when the unenforceable provision of the clause can be removed without the need for adding to or modifying the wording. \\
-\hline
-8. Enforceability in case of dismissal & The enforceability of a non-compete is not linked to the reason for the termination of the employment relationship. The circumstances of the dismissal might play a role in how courts grant the remedies in the specific case (e.g., if the employee is unfairly dismissed, courts might be less willing to grant an injunctive relief) \\
-\hline
-9. Sanctions & Employers are not subject to sanctions if they use unenforceable non-compete clauses \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsubsection*{Conclusions}
-
-For \textbf{Canada}, \textbf{Korea} and \textbf{New Zealand}, I cannot apply any restriction because I could not define any valid criterion for legality. For \textbf{France}, by not considering those clauses for which compensation is not required, the percentage of workers affected becomes 23\%, well below employers. For \textbf{Poland} and \textbf{Japan}, if I remove the clauses that do not provide compensation, I obtain a perfect match between workers and employers. 
-However, applying the same criteria to all the 14 countries, creates an important mismatch in all those countries where worker and firms were previously aligned. 
-
 
 \newpage
+\subsection{Unenforceability, by Country}
 
-    
-\begin{landscape}
-\section{Descriptives}
+	\textbf{Mexico}
 
-\subsection{Incidence by Gender and Education}
+Always unenforceable.
 
-% --- 1st landscape page ---
+	\textbf{Belgium}
 
-\begin{figure}[H]
-\centering
-\begin{minipage}{0.5\textwidth}
-    \centering
-    \includegraphics[width=1.0\textwidth,height=0.48\textheight,keepaspectratio]{Incidence_gender_Education/Belgium.png}\\[0.5em]
-    \includegraphics[width=1.0\textwidth,height=0.48\textheight,keepaspectratio]{Incidence_gender_Education/France.png}
-\end{minipage}%
-\hfill
-\begin{minipage}{0.5\textwidth}
-    \centering
-    \includegraphics[width=1.0\textwidth,height=0.48\textheight,keepaspectratio]{Incidence_gender_Education/Canada.png}\\[0.5em]
-    \includegraphics[width=1.0\textwidth,height=0.48\textheight,keepaspectratio]{Incidence_gender_Education/Germany.png}
-\end{minipage}
-\caption{Incidence by Gender and Education: Belgium, Canada, France, Germany}
-\end{figure}
-\end{landscape}
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 12 months (or no duration)
+	\item Compensation below 50\% of salary (or no compensation)
+	\item No geographic or sectoral scope
+	\item Annual gross salary below 43,106 (as of January 2025)
+	\item If the salary is between EUR 43,106 and 86,212, a noncompete is unenforceable unless CBA says otherwise
+\end{itemize}
 
-% --- 2nd landscape page ---
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Japan.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Korea.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Mexico.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/New Zealand.png}
-\caption{Incidence by Gender and Education: Japan, Korea, Mexico, New Zealand}
-\end{figure}
-\end{landscape}
+	\textbf{Germany}
 
-% --- 3rd landscape page ---
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Poland.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Portugal.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Spain.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Sweden.png}
-\caption{Incidence by Gender and Education: Poland, Portugal, Spain, Sweden}
-\end{figure}
-\end{landscape}
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 24 months (or no duration)
+	\item Compensation below 50\% of salary (or no compensation)
+	\item No geographic or sectoral scope
+\end{itemize}
 
-% --- 4th landscape page ---
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/Switzerland.png}
-\includegraphics[width=0.45\textwidth]{Incidence_gender_Education/UK.png}
-\caption{Incidence by Gender and Education: Switzerland, UK}
-\end{figure}
-\end{landscape}
+	\textbf{Sweden}
 
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 9/18 months (or no duration) --- but can last longer under special circumstances
+	\item Compensation below 60\% of salary (or no compensation, but lower amount is admitted if the employee earns a salary from non-competing work)
+	\item No geographic or sectoral scope
+\end{itemize}
 
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Belgium.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Canada.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/France.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Germany.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Japan.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Korea.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Mexico.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Poland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Portugal.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Spain.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Sweden.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Education/UK.png}
-\caption{Incidence by Gender and Education}
-\end{figure}
-\end{landscape}
+	\textbf{Canada}
 
-\subsection{Incidence by Gender and Industry}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Belgium.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Canada.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/France.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Germany.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Japan.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Korea.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Mexico.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Poland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Portugal.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Spain.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Sweden.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/UK.png}
-\caption{Incidence by Gender and Industry}
-\end{figure}
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Belgium.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Canada.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/France.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Germany.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Japan.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Korea.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Mexico.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Poland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Portugal.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Spain.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Sweden.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_Industry/UK.png}
-\caption{Incidence by Gender and Industry}
-\end{figure}
-\end{landscape}
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No geographic or sectoral scope
+\end{itemize}
+Note: specific rules for Ontario (noncompetes banned in 2021 + sanctions)
 
-\subsection{Incidence by Gender and Position}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Belgium.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Canada.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/France.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Germany.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Japan.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Korea.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Mexico.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Poland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Portugal.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Spain.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Sweden.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/UK.png}
-\caption{Incidence by Gender and Position}
-\end{figure}
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Belgium.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Canada.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/France.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Germany.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Japan.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Korea.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Mexico.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Poland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Portugal.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Spain.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Sweden.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{Incidence_gender_position/UK.png}
-\caption{Incidence by Gender and Position}
-\end{figure}
-\end{landscape}
+	\textbf{Portugal}
 
-% --- Compensation Images ---
-\subsection{Compensation by Type and Gender}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Belgium.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Canada.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/France.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Germany.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Japan.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Korea.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Mexico.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Poland.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Portugal.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Spain.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Sweden.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/UK.png}
-\caption{Compensation by Type and Gender}
-\end{figure}
-\begin{landscape}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Belgium.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Canada.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/France.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Germany.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Japan.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Korea.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Mexico.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/New Zealand.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Poland.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Portugal.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Spain.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Sweden.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/Switzerland.png}
-\includegraphics[width=0.9\textwidth]{compensation_type_gender/UK.png}
-\caption{Compensation by Type and Gender}
-\end{figure}
-\end{landscape}
-% ...existing code...
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 24 months (or no duration)
+	\item No compensation
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{France}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No compensation
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{Spain}
+
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 24 months for technical employees and 6 months for other workers (or no duration)
+	\item No compensation
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{Switzerland}
+
+Unenforceable if:
+\begin{itemize}
+	\item Duration above 36 months (or no duration)
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{Poland}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item Compensation below 25\% of salary (or no compensation)
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{Japan}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{United Kingdom}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{New Zealand}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No geographic or sectoral scope
+\end{itemize}
+
+	\textbf{Korea}
+
+Unenforceable if:
+\begin{itemize}
+	\item No duration
+	\item No geographic or sectoral scope
+\end{itemize}
+\thispagestyle{empty}
 
 \newpage
 \bibliographystyle{plainnat}
